@@ -11,10 +11,14 @@
 
 ##### Setting for Atom
 ###### Font
-+ `File`->`Settings`
-+
++ `File -> Settings` Field:`Font Family`
+```
+Consolas, MeiryoKe_Gothic
+```
+  - 複数フォントを指定可能（※装飾はcssなのでWebと同じ）
+  - Winで指定してあるフォントリンクは適用されないので自分で書いて並べる
 
-+ 
++
 
 
 ### Reference
