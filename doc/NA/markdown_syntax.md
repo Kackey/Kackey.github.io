@@ -1,4 +1,4 @@
-# [Title] Taking note with Markdown
+# [Title] Markdown Syntax
 
 
 # GitHub Flavoured Markdown
