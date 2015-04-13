@@ -1,8 +1,56 @@
 
+# 仮想化支援機能のOn （`vagrant up`で接続できない）
+
+`vagrant up `してみても↓メッセージで接続されない
+```
+default: Warning: Connection timeout. Retrying...
+```
+最後に↓なメッセージが出る
+```
+Timed out while waiting for the machine to boot. This means that
+Vagrant was unable to communicate with the guest machine within
+the configured ("config.vm.boot_timeout" value) time period.
+
+If you look above, you should be able to see the error(s) that
+Vagrant had when attempting to connect to the machine. These errors
+are usually good hints as to what may be wrong.
+
+If you're using a custom box, make sure that networking is properly
+working and you're able to connect to the machine. It is a common
+problem that networking isn't setup properly in these boxes.
+Verify that authentication configurations are also setup properly,
+as well.
+
+If the box appears to be booting properly, you may want to increase
+the timeout ("config.vm.boot_timeout") value.
+```
+
+`vagrant up`すると、今度は↓なメッセージがでるようになり、
+```
+==> default: Waiting for machine to boot. This may take a few minutes...
+The guest machine entered an invalid state while waiting for it
+to boot. Valid states are 'starting, running'. The machine is in the
+'paused' state. Please verify everything is configured
+properly and try again.
+
+If the provider you're using has a GUI that comes with it,
+it is often helpful to open that and watch the machine, since the
+GUI often has more helpful error messages than Vagrant can retrieve.
+For example, if you're using VirtualBox, run `vagrant up` while the
+VirtualBox GUI is open.
+
+```
+
+VirtualBoxのGUIが表示されて、その中でエラーも表示される
+[vagrantup_err_on_virtualbox.png]
+
+というわけで、PCのBIOS設定で`Intel(R) Virtualization Technology`をEnabledにする
+
+
 # SSH
 WindowsではSSHが入っていないので、
 `vagrant ssh`でエラメッセージが表示される。
-```bash
+```
 >vagrant ssh
 `ssh` executable not found in any directories in the %PATH% variable. Is an
 SSH client installed? Try installing Cygwin, MinGW or Git, all of which
