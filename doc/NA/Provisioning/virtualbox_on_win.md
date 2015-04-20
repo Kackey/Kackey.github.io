@@ -25,6 +25,11 @@ If the box appears to be booting properly, you may want to increase
 the timeout ("config.vm.boot_timeout") value.
 ```
 
+### VirtualboxのGUIを起動するように設定変更
+```
+
+```
+
 `vagrant up`すると、今度は↓なメッセージがでるようになり、
 ```
 ==> default: Waiting for machine to boot. This may take a few minutes...
@@ -47,7 +52,7 @@ VirtualBoxのGUIが表示されて、その中でエラーも表示される
 というわけで、PCのBIOS設定で`Intel(R) Virtualization Technology`をEnabledにする
 
 
-# SSH
+# WindowsコマンドプロンプトからSSHを使えるように
 WindowsではSSHが入っていないので、
 `vagrant ssh`でエラメッセージが表示される。
 ```
@@ -63,6 +68,7 @@ Username: vagrant
 Private key: C:/Users/hidekazu.kakinuma/.vagrant.d/insecure_private_key
 
 ```
+## Git for Windowsでインストールされるsshを使う
 
 Git for Windowsのsshを利用できるようにしておく
 
