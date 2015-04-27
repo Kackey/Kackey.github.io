@@ -26,8 +26,33 @@ the timeout ("config.vm.boot_timeout") value.
 ```
 
 ### VirtualboxのGUIを起動するように設定変更
-```
+`Vagrantfile`にGUI利用設定を追記
+```ruby
+Vagrant.configure(2) do |config|
+  #
+  # （中略）
+  #
 
+  # Provider-specific configuration so you can fine-tune various
+  # backing providers for Vagrant. These expose provider-specific options.
+  # Example for VirtualBox:
+  #
+  # config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  #   # Customize the amount of memory on the VM:
+  #   vb.memory = "1024"
+  # end
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = true
+  end
+
+  #
+  # （中略）
+  #
+
+end
 ```
 
 `vagrant up`すると、今度は↓なメッセージがでるようになり、
@@ -68,7 +93,7 @@ Username: vagrant
 Private key: C:/Users/hidekazu.kakinuma/.vagrant.d/insecure_private_key
 
 ```
-## Git for Windowsでインストールされるsshを使う
+### Git for Windowsでインストールされるsshを使う
 
 Git for Windowsのsshを利用できるようにしておく
 
