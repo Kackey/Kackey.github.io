@@ -6,3 +6,8 @@
 ###### SSHクライアント設定（公開鍵取得）
 
 - [公開鍵認証によるSSH接続 - Macターミナルの使い方 - Linux入門 - Webkaru](http://webkaru.net/linux/mac-ssh-login-public-key/)
+
+# フォントインストール
+# メイリオ
+
+# "MeiryoKe"
