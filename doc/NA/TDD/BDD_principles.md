@@ -15,6 +15,10 @@ Simple
 ("BDD with Javascript"->`2.3.2 Red-Green-Refactor`)
 
 ## Coding Error-Driven
+("BDD with Javascript"->`2.3.3 Coding Error-Driven`)
+- You wrote the spec first and let the error messages guide you in order to know what you needed to implement next.
+  - This is a great technique that assists you with the implementation of production code.
+  - It let the JS-interpreter do some thinking on your behalf, freeing your brain for more important tasks.
 
 ## Metric of BDD
 - 全てのSpecがGreenになったか？（実装フェーズの完了した後に）

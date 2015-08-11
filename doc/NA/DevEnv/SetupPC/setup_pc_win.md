@@ -80,6 +80,9 @@
 - (official)[SuperTreeEditor - 自作ソフトの墓場](http://www.geocities.jp/recyclebin5385/software/supertreeeditor.html)
 - [Vector： SuperTreeEditor - 新着ソフトレビュー](http://www.vector.co.jp/magazine/softnews/100603/n1006031.html#go_download)
 
+###### "Clibor"
+
+
 # 個人ToolBox系ソフトウェア
 ##### "RasophNote"
 

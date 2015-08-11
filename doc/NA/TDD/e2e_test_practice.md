@@ -2,6 +2,7 @@
 
 # Page Objects
 
+###### JS + Protractor
 ```javascript
 var Hoge_page = function () {
   this.loadPage = function(){ browser.get('http://hoge.co.jp/hogehoge/'); };
@@ -17,7 +18,12 @@ var Hoge_page = function () {
 };
 ```
 
-# Naming Rule
+###### Ruby + Capybara
+```ruby
+
+```
+
+# Naming Rule in Spec
 
 ###### UI parts
 - Button: xxx_btn
@@ -32,3 +38,8 @@ ${element}.clear
 
 $("input[name=hoge]").clear();
 ```
+
+###### File Download
+profileを設定することで、ファイルダウンロードの自動処理を行わせることができる…はず
+
+- [Selenium | ファイルのダウンロードを行う（FireFox, Ruby） - Tbpgr Blog](http://tbpgr.hatenablog.com/entry/20140203/1391431135)
